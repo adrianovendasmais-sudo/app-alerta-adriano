@@ -1,0 +1,37 @@
+{
+  "name": "Agenda e Alertas",
+  "short_name": "Agenda",
+  "description": "Quadros, bloco de notas e alertas da equipe",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c2436",
+  "theme_color": "#0c2436",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "./",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ]
+}
