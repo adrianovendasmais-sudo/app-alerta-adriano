@@ -1,0 +1,255 @@
+FÉRIAS SABIDAS - como publicar no Netlify e instalar como aplicativo
+
+PUBLICAR
+1. Entre em app.netlify.com e abra a aba "Sites".
+2. Descompacte este zip e arraste a PASTA INTEIRA (com todos os arquivos) para a área
+   "Drag and drop your site output folder here". Não envie só o index.html: o app
+   precisa também dos ícones, do manifest.webmanifest e do sw.js para poder ser instalado.
+3. O Netlify gera um endereço (https). Abra esse endereço no celular, tablet ou computador.
+
+INSTALAR COMO APLICATIVO
+- Android (Chrome): abra o endereço, toque nos 3 pontinhos e em "Instalar app"
+  (ou "Adicionar à tela inicial"). O ícone aparece na tela inicial.
+- Computador (Chrome ou Edge): clique no ícone de instalar na barra de endereço
+  (ou menu > "Instalar Mundo das Descobertas").
+- iPhone/iPad (Safari): toque em Compartilhar > "Adicionar à Tela de Início".
+Depois de aberto uma vez com internet, o app também funciona sem internet.
+A opção de instalar só aparece no endereço do Netlify, não dentro do Claude.
+
+COMO USAR COMO AVALIAÇÃO (professora ou psicopedagoga)
+- Cadastre cada criança em "Novo aluno". Cada aluno tem estrelas, tema e histórico próprios.
+- Toque em "Adultos" > "Iniciar avaliação guiada". Escolha a Forma A ou B e as partes.
+  Os itens são fixos em cada forma, então dá para comparar uma aplicação com outra.
+  Use a Forma B ao repetir, para a criança não decorar as respostas.
+- Em "Adultos" > "Ver e imprimir relatório", escolha a aplicação, preencha as observações
+  e toque em Imprimir (A4). Também dá para copiar o texto ou baixar uma planilha (CSV).
+- Apoios: modo calmo, tudo maior, letra de fácil leitura e velocidade da voz, em "Adultos".
+
+IMPORTANTE
+- O relatório é um registro de apoio à observação. Não é diagnóstico e não tem notas de corte por idade.
+- Os dados ficam salvos só no navegador do aparelho usado (não vão para nenhum servidor).
+  Limpar os dados do navegador apaga o histórico. Baixe o CSV para guardar uma cópia.
+- A voz usa as vozes do aparelho. Se faltar a voz em português do Brasil, instale-a nas
+  configurações de voz do celular ou tablet.
+
+
+NOVO: RECURSOS PARA CRIANÇAS AUTISTAS (Adultos > abas abertas por seção)
+- Conforto sensorial: sons, confete, animações, mascote e fundo ponteado podem ser ligados/desligados separadamente; volume; "Modo calmo" desliga tudo.
+- Rotina visual "primeiro / depois": monte a sequência do dia (ex.: Contas > Pausa > Brincar). A tela inicial mostra Feito / Agora / Depois.
+- Botão de pausa sempre visível (ícone || no topo): tela calma com respiração; o tempo de pausa não conta no tempo de resposta.
+- Interesses (trens, dinossauros, carros, espaço, animais, futebol, princesas): aparecem nas contagens, palavras, memória e padrões. A avaliação guiada NÃO usa interesses, para continuar comparável.
+- Quadro de fichas: a criança junta fichas por acerto de primeira e, ao completar, aparece o prêmio escolhido pelo adulto (ex.: "Hora de brincar!").
+- Modo mediado: o adulto marca Sozinha(o) / Com dica / Com ajuda a cada item. O relatório mostra a coluna "Com apoio".
+- Poucas opções: reduz para 2 alternativas nas atividades (não na avaliação).
+- Metas individuais (Adultos > Metas) e "Evolução entre aplicações" no relatório (▲ ▼ =).
+- Cada aluno guarda suas próprias configurações.
+Observação: é um registro de apoio; não é diagnóstico. A configuração ideal deve ser definida com a equipe que acompanha a criança.
+
+TEMA "MUNDO SABIDO" (novo): céu azul, capivara Capi, cartões coloridos e menu inferior (Início, Meu Progresso, Conquistas, Perfil). Escolha em Adultos > Tema ou ao cadastrar o aluno. Os temas Algodão-doce e Aventura continuam disponíveis.
+
+NOVIDADES (mais conteúdo e mais dinâmica)
+- Desafio do dia (6 perguntas surpresa de todas as áreas, +5 estrelas na primeira vez do dia) e botão Surpresa.
+- Sequência de dias seguidos e álbum de 40 figurinhas (uma nova a cada rodada completa), em Conquistas.
+- Novas atividades: Ordem do alfabeto, Maiúscula e minúscula, Quem rima?, Palavras opostas, Quanto falta?, Maior ou menor?, Dobro e metade, Antes e depois, Contar figuras, Qual não combina?
+- Mais palavras, frases e 3 histórias novas; 8 novos temas de inglês; 3 novos quebra-cabeças.
+- A avaliação guiada continua usando só os itens originais, para as aplicações seguirem comparáveis.
+
+CAPIVARA NA TELA INICIAL: o "Modo calmo" antigo escondia a capivara em alguns aparelhos. Agora o Modo calmo desliga só sons, confete, animações e fundo; a capivara fica parada. Para escondê-la de propósito: Adultos > Conforto sensorial > Mascote.
+
+CAPI MAIS INTERATIVA
+- A Capi reage nos jogos (feliz ao acertar, incentiva ao errar). Na avaliação guiada ela não aparece.
+- Toque na Capi da tela inicial: ela pula e fala uma frase.
+- Armário da Capi (tela Conquistas ou botão na tela inicial): acessórios desbloqueados por rodadas completas.
+- Novas atividades "Traçar letras" e "Traçar números" (dedo na tela, com registro no relatório).
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+COPIA DE SEGURANCA
+- Area dos adultos > Copia de seguranca > "Salvar copia de seguranca" gera um arquivo .json com todos os alunos, progresso e relatorios.
+- "Restaurar de um arquivo" (tambem na tela Quem vai estudar?) recupera os dados em outro aparelho ou apos limpar o navegador.
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+NIVEL QUE SE AJUSTA, RECOMENDACAO E MAIS CONTEUDO
+- "Contas do meu nivel" e "Palavras do meu nivel" (primeira atividade de Contas e Leitura): 3 niveis. Sobe com 5 ou 6 acertos de 6 e desce com 2 ou menos. So na pratica livre; a avaliacao guiada nao muda.
+- Apos o primeiro erro em perguntas com 4 opcoes, o app tira uma opcao errada para ajudar.
+- Tela inicial: cartao "Para hoje" com a area em que a crianca mais errou nas ultimas respostas (precisa de pelo menos 4 respostas e menos de 80% de acerto).
+- Mais conteudo: 15 palavras/silabas, 12 frases, 3 historias e 3 temas de ingles (Brinquedos, Profissoes, Natureza).
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+COMEMORACAO DE CONQUISTAS
+- Ao ganhar rodada perfeita, subir de nivel, completar o desafio do dia, atingir sequencias de 3, 5, 7, 10, 14, 21, 30 dias, ganhar figurinha ou acessorio da Capi, aparece uma tela de festa: chuva de confete, fanfarra, voz dando parabens e a Capi pulando.
+- Respeita os ajustes sensoriais: sem confete se desligado, sem som se Sons de efeito estiver desligado, sem animacao no Modo calmo.
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+FAIXAS DE 4 A 12 ANOS E REGISTRO DO PROFISSIONAL
+- Cada aluno tem uma faixa: 4 a 5 anos (mais visual, 3 opcoes, letras e numeros faceis, cores e tamanhos, vocabulario), 6 a 8 anos (como antes) e 9 a 12 anos (ortografia, textos, contas maiores, multiplicacao e divisao, desafios numericos). A faixa e escolhida pela data de nascimento e pode ser trocada em Editar aluno ("Faixa do conteudo").
+- As atividades, o desafio do dia, o "Para hoje" e o nivel adaptativo mudam conforme a faixa. Para 4 a 5 anos o app liga "Tudo maior" e menos opcoes ao cadastrar.
+- Avaliacao guiada: a faixa da prova pode ser escolhida na tela de avaliacao. Cada faixa tem itens proprios e formas A/B. A avaliacao de 6 a 8 anos nao mudou. Compare so aplicacoes da mesma faixa.
+- Novas areas no relatorio: Linguagem e vocabulario, Cores/formas/tamanhos, Ortografia e Raciocinio logico-matematico.
+- Registro do profissional: ficha do aluno (anamnese) em Editar aluno, observacoes por aplicacao ao final da avaliacao, e tudo sai no relatorio impresso, junto com a faixa de cada aplicacao.
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+VISUAL MAIS MODERNO
+- Cartoes e botoes com brilho de vidro e sombras suaves, animacao de entrada nas telas, resposta com marca de certo/errado (nao depende so da cor), Capi redonda nos jogos, barra inferior em formato de pilula, nuvens suaves no tema Mundo e lista de atividades mais compacta no celular.
+- As animacoes respeitam o Modo calmo e a preferencia de movimento reduzido do aparelho.
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+MUNDOS POR IDADE (NOVOS: RELOGIOS, DINHEIRO, CORES E FORMAS)
+- Ao cadastrar a data de nascimento, o app libera os mundos da idade:
+  4 a 5 anos: Letras, Numeros, Cores e Formas, Mente, Quebra-cabecas e Ingles (sem Leitura).
+  6 a 8 anos: Letras, Leitura, Numeros, Relogios, Dinheiro, Mente, Quebra-cabecas e Ingles.
+  9 a 12 anos: Leitura, Numeros, Dinheiro, Relogios, Mente, Quebra-cabecas e Ingles (sem Mundo das Letras).
+- Mundo dos Relogios: ler relogio de ponteiros, achar o relogio de uma hora digital, dias e meses, e (9 a 12) duracao e horas depois.
+- Mundo do Dinheiro: contar moedas e notas, troco, comparar precos, quanto gastar e (9 a 12) poupar e descontos.
+- Mundo das Cores e Formas (4 a 5 anos): cores, tamanhos, formas e lados.
+- Editar aluno > "Mundos liberados": o adulto pode ligar ou desligar qualquer mundo. Ao mudar idade ou faixa, volta para o padrao da idade.
+- Avaliacao de 9 a 12 anos ganhou as partes Hora e tempo e Dinheiro e consumo. A de 6 a 8 anos nao mudou.
+- Missao do dia, progresso, medalhas, desafio do dia e "Para hoje" seguem os mundos liberados.
+- Para atualizar no GitHub: index.html, sw.js e LEIAME.txt.
+
+AVALIACAO GUIADA SEM "MUITO BEM"
+- Na avaliacao guiada o app nao fala nem mostra "Muito bem! Vamos continuar." a cada resposta (nem ao fim do quebra-cabeca). As falas de abertura de cada parte e o "Terminamos! Muito obrigado!" continuam.
+- Para atualizar no GitHub: index.html e sw.js.
+
+v21 - FONTES LOCAIS E CACHE OFFLINE
+- As fontes (Fredoka, Nunito, Atkinson Hyperlegible) agora ficam na pasta fonts/. O aplicativo nao chama mais o Google Fonts.
+- O cache offline (sw.js, versao mundo-descobertas-v23) guarda tambem os icones e as fontes. A pasta fonts/ tem cache longo (_headers).
+- Ao publicar, envie a PASTA INTEIRA, incluindo fonts/.
+
+v22 - PRIVACIDADE E LGPD
+- Aviso "Antes de comecar" no primeiro uso, para adultos ("Sou adulto, li e concordo"). O aceite e pedido de novo se PRIV_V mudar no index.html.
+- Tela "Privacidade e termos de uso" (9 secoes), com links no aviso, em "Quem vai estudar?" e na Area dos adultos.
+- Area dos adultos > Privacidade e dados > "Apagar todos os dados deste aparelho" (com confirmacao).
+- Dicas de privacidade no cadastro do aluno e aviso de dados pessoais de crianca no relatorio impresso, no texto copiado e na copia de seguranca.
+- ANTES DE DIVULGAR: preencher PRIV_CONTACT no index.html (nome e e-mail do responsavel). O texto de privacidade e um modelo e nao substitui orientacao juridica.
+
+v23 - PIN DA AREA DOS ADULTOS
+- Area dos adultos > "Senha dos adultos (PIN)": PIN de 4 a 6 numeros, guardado so como hash SHA-256 com sal. Bloqueia area dos adultos, relatorio, metas, avaliacao guiada e cadastro/edicao de alunos.
+- Codigo de recuperacao (XXXX-XXXX-XXXX) mostrado uma unica vez. "Esqueci o PIN" + codigo remove o PIN.
+- Trava de 30 s apos 5 erros (persistida). O PIN e pedido de novo ao sair da area dos adultos ou apos 10 min parado (nao expira durante a avaliacao guiada).
+- A copia de seguranca nao leva o PIN; ao restaurar, o PIN do aparelho e mantido. Com PIN ativo, "Restaurar" so aparece na Area dos adultos.
+- O PIN e so uma barreira contra a crianca. Nao protege contra quem sabe mexer nos dados do navegador.
+- Para atualizar no GitHub/Netlify: index.html, sw.js, _headers, manifest.webmanifest, LEIAME.txt e a pasta fonts/.
+
+v24 - CODIGO ORGANIZADO EM ARQUIVOS
+- O index.html agora so tem a estrutura da pagina. O visual ficou em styles.css e a logica e o conteudo em app.js. Nada muda para quem usa.
+- O sw.js (cache mundo-descobertas-v24) guarda styles.css e app.js para uso offline.
+- Ao publicar, envie a PASTA INTEIRA: index.html, styles.css, app.js, sw.js, _headers, manifest.webmanifest, icones e fonts/.
+
+v25 - ACESSIBILIDADE (primeira rodada)
+- Auditoria automatica (axe-core, WCAG 2.1 AA) nos 3 temas, claro e escuro: sem violacoes nas telas inicial, area dos adultos, conquistas, menu e atividade.
+- Titulo principal (h1) em todas as telas, ordem de titulos corrigida no aviso inicial.
+- Contraste corrigido: tema Mundo (azul e texto secundario, inclusive com o aparelho em modo escuro) e tema Algodao-doce.
+- Alvos de toque de pelo menos 44 px (botoes do cabecalho, chips, voltar, campos e barras de ajuste). Em telas de 320 px o cabecalho mostra so o globo para nao sobrepor os botoes.
+- Foco de teclado visivel tambem em campos de selecao, texto, resumos e links.
+- AINDA FALTA: teste com leitor de tela real (TalkBack, VoiceOver, NVDA), teste so com teclado nas atividades e revisao com profissionais de TEA, TDAH e dislexia.
+- Cache: mundo-descobertas-v25.
+
+
+v26 - AJUSTES DE USABILIDADE (sem mudar a identidade visual)
+- Botao "Começar minha missão" (vira "Continuar minha missão" depois da primeira atividade do dia) dentro de "Minha Missão de Hoje"; leva ao primeiro mundo ainda nao feito hoje e mostra "Próximo: ...". Quando todos os mundos do dia estao feitos, aparece "Missão de hoje cumprida!". O 0/N continua ligado aos dados reais.
+- Cartao de estrelas da tela inicial mais compacto: o saldo fica so no topo; o cartao mostra nivel e quanto falta para o proximo.
+- Nomes iguais entre missao, cartoes e titulo da tela de cada mundo: Numeros (antes "Contas"), Quebra-cabeças (antes "Peças"), Relogios (antes "Horas"), Mente (antes "Mente agil" no titulo). Mente NAO foi unido a nenhuma outra categoria.
+- Explicacao de como ganhar estrelas em Meu Progresso e Conquistas (regras reais: 1 por acerto de primeira, 2 a 5 por quebra-cabeça, 5 no desafio do dia) e quanto falta para o proximo nivel.
+- Textos menores maiores, rotulos da navegacao inferior podem quebrar linha, cabecalho sem sobreposicao em telas de 320 px (nome do app quebra em duas linhas).
+- Arquivos alterados: app.js, styles.css, sw.js (cache v26), LEIAME.txt.
+
+
+v27 - ACESSIBILIDADE, 2a RODADA
+- Link "Ir para o conteudo" (aparece ao apertar Tab) no inicio de cada tela.
+- Ao trocar de tela o foco vai para o conteudo; em cada pergunta o foco vai para o cartao da pergunta (leitor de tela le o enunciado) e, depois de um erro, para a proxima opcao disponivel.
+- Opcoes de resposta com nome acessivel; certo/errado ja tinham marca visual (✓ e ✕), alem da cor.
+- Quebra-cabeca: cada peca informa numero, posicao, se esta no lugar certo e se esta selecionada; uma area de aviso anuncia as trocas e quantas pecas estao no lugar. Funciona com Tab, Enter e Espaco.
+- Arquivos alterados: app.js, styles.css, sw.js (cache v27), LEIAME.txt.
+- Nao testado com TalkBack, VoiceOver ou NVDA reais; so com Chromium automatizado.
+
+
+v28 - CONTEUDO NOVO: CIENCIAS E NATUREZA
+- Nova atividade "Ciencias e natureza" no Mundo da Mente, para 6 a 8 anos (20 perguntas: bichos, plantas, corpo, espaco) e 9 a 12 anos (20 perguntas: fotossintese, planetas, cadeia alimentar, celula, energia). Cada rodada sorteia 6. Nao aparece para 4 a 5 anos.
+- Entra tambem no Desafio do dia dessas faixas.
+- E pratica livre: nao faz parte da avaliacao guiada, que continua com itens fixos. Perguntas escritas por nos, ainda sem revisao de professor(a).
+- Arquivos alterados: app.js, sw.js (cache v28), LEIAME.txt.
+
+
+v29 - USO EM ESCOLA: TURMAS
+- Campo opcional "Turma" no cadastro do aluno (Editar aluno). Alunos da mesma turma usam o mesmo texto (ex.: 3o A manha); o campo sugere as turmas ja criadas.
+- Tela "Quem vai estudar?": com 2 ou mais turmas aparecem botoes para filtrar por turma; a turma aparece no cartao do aluno.
+- Area dos adultos > "Relatorio da turma": quadro com aluno, turma, ano, estrelas, rodadas completas, dias seguidos, ultima atividade e avaliacoes guiadas; filtro por turma, impressao e planilha CSV. Mostra uso e participacao; nao e avaliacao individual nem diagnostico. Protegido pelo PIN dos adultos.
+- O backup (.json) ja leva a turma. Compartilhar alunos entre aparelhos continua sendo por backup/restauracao.
+- Arquivos alterados: app.js, styles.css, sw.js (cache v29), LEIAME.txt.
+
+
+v30 - MAIS TEMAS DE INGLES
+- 6 temas novos no Mundo do Ingles: Esportes, Legumes e verduras, Sentimentos, Bichinhos, Espaco e Cidade (de 8 a 10 palavras cada, com figura, voz em ingles e portugues, jogo e Desafio misto). Agora sao 24 temas.
+- Palavras escolhidas sem figura repetida de outros temas, para o jogo nao mostrar duas opcoes iguais.
+- Arquivos alterados: app.js, sw.js (cache v30), LEIAME.txt.
+
+
+v31 - CORRECAO EM CELULARES ESTREITOS (360 px)
+- Nomes dos mundos nao quebram mais no meio da palavra ("Nume-ros", "Cabe-cas"): so quebram entre palavras ou no hifen de "Quebra-Cabecas"; a setinha dos cartoes some abaixo de 420 px para dar espaco ao nome.
+- Cabecalho: o nome "Mundo das Descobertas" aparece inteiro em uma linha e os botoes (estrelas, pausa, som, ajustes) ficam na linha de baixo; o cabecalho deixa de ficar fixo nessas telas, para nao se sobrepor ao conteudo ao rolar.
+- Arquivos alterados: styles.css, sw.js (cache v31), LEIAME.txt.
+
+
+v32 - CONTAGEM ANONIMA DE VISITAS (texto de privacidade)
+- O aviso inicial e a tela de privacidade agora dizem que o responsavel pelo app pode contar visitas de forma anonima (sem cookies, sem identificar a crianca, sem ler dados dos alunos). Como o uso dos dados mudou, o aviso "Antes de comecar" volta a aparecer uma vez para novo aceite (PRIV_V = 2).
+- O codigo do app NAO envia nada: a contagem vem da ferramenta ligada no servico de hospedagem.
+- COMO LIGAR NA CLOUDFLARE PAGES: no painel da Cloudflare, abra o projeto do Pages e ative o "Web Analytics" (sem cookies; mostra visitas, aparelhos e paises). Confira no painel o nome exato da opcao, que a Cloudflare pode mudar. Nao precisa mexer no index.html.
+- So publique esta versao junto com a ativacao da contagem; se nao for usar contagem, volte PRIV_V para 1 e retire os trechos "estatistica de visitas" e "contar as visitas".
+- Arquivos alterados: app.js, sw.js (cache v32), LEIAME.txt.
+
+
+v33 - CIENCIAS PARA 4 A 5 ANOS
+- "Ciencias e natureza" (Mundo da Mente) agora tambem aparece para 4 a 5 anos, em versao so com figuras e voz: 16 perguntas curtas (bichos, corpo, sol e lua, agua, plantas, higiene), cada rodada sorteia 6. Entra no Desafio do dia dessa faixa.
+- Pratica livre, fora da avaliacao guiada. Perguntas escritas por nos, sem revisao de professor(a).
+- Arquivos alterados: app.js, sw.js (cache v33), LEIAME.txt.
+
+
+v34 - MAIS HISTORIAS E JOGO DE INGLES SEM FIGURAS IGUAIS
+- 4 historias novas no Mundo da Leitura (O dia de chuva, A pipa da Duda, O jardim da vovo, O cachorro Tobi), cada uma com 3 perguntas. Agora sao 13 historias. As antigas mantem a mesma ordem.
+- Jogo de ingles (Desafio misto e jogos dos temas): nao mostra mais duas opcoes com a mesma figura (por exemplo sol, nuvem, carro, trem, arco-iris, que existiam em mais de um tema).
+- Arquivos alterados: app.js, sw.js (cache v34), LEIAME.txt.
+
+
+v35 - HISTORIAS EM INGLES COM INTERPRETACAO
+- Nova atividade "Historias em ingles" no Mundo do Ingles (6 a 12 anos; nao aparece para 4 a 5): 8 historias curtas, 4 faceis (4 a 5 frases simples) e 4 medias. Cada frase pode ser tocada para ouvir em ingles; "Ouvir a historia" le tudo; "Ver em portugues" mostra a traducao de cada frase; "Responder as perguntas" faz 3 perguntas de interpretacao, com pergunta e respostas em ingles.
+- Pratica livre, fora da avaliacao guiada. Textos escritos por nos, sem revisao de professor(a) de ingles. A voz em ingles depende das vozes do aparelho.
+- Arquivos alterados: app.js, sw.js (cache v35), LEIAME.txt.
+
+
+v36 - CARTOES AO LADO DA CAPI MAIS ESTREITOS
+- Na tela inicial (tema Mundo), o balao "Ola!" e o cartao de nivel/estrelas ficaram mais estreitos e baixos (letras menores, menos espaco interno); a Capi ganhou mais largura. O texto continua inteiro, sem cortes.
+- Arquivos alterados: styles.css, sw.js (cache v36), LEIAME.txt.
+
+v37 - INGLES: HISTORIAS MAIS LONGAS E CONVERSAS CURTAS; NOMES PADRONIZADOS
+- 4 historias novas em ingles para 9 a 12 anos (nivel "Mais dificil", 6 frases e 5 perguntas): The School Garden, The Science Fair, The Lighthouse, Learning to Swim (EN_STORIES). Pratica livre.
+- Nova atividade "Conversas curtas" no Mundo do Ingles (EN_DLG, 20 dialogos, sorteia 6; ouvir a pergunta e escolher a resposta). Pratica livre, escondida para 4 a 5 anos.
+- Nomes padronizados: "Contas" virou "Numeros" e "Mente agil" virou "Mente" (titulos, relatorios, rotina visual e desafio do dia).
+- ATELIE DE PROJETOS (7+ anos): cartao na tela inicial (so aparece para faixas 6-8 e 9-12 quando a idade, se informada, e 7 ou mais). 4 projetos de varios dias: Meu zoologico, Minha barraca, Diario do feijao, Minha historia (PROJ no app.js). Sem "certo/errado": a crianca escolhe, testa opcoes e recebe PISTAS (cenarios), monta orcamentos (a pista mostra quanto passou), escreve como pensou e registra observacoes reais. Estrelas por esforco (2 por etapa, +1 por testar mais de uma opcao ou explicar com detalhes, +3 ao concluir). No maximo 2 etapas por dia; o diario do feijao espera 2 dias entre observacoes. Portfolio (tela projfolio) com tudo o que a crianca criou, historia completa com voz e impressao. Dados em P.proj (entram na copia de seguranca). Nao entra na avaliacao guiada nem no relatorio.
+- Arquivos alterados: app.js, styles.css, sw.js (cache v37), LEIAME.txt. Falta revisao por professor(a) (ingles e conteudo dos projetos).
+
+v38 - ESCOLAS: PAINEL DA ESCOLA, ESTRUTURA MODULAR E TESTES
+- CODIGO REORGANIZADO: o codigo-fonte agora fica em src/ (24 arquivos numerados). O app.js e GERADO por "node build.js" (a pasta publicada continua a mesma, sem build no servidor). "node build.js --check" confere. As imagens da Capi e dos mundos sairam do app.js e ficam em images/ (cache offline atualizado). Nada muda para o usuario.
+- TESTES AUTOMATICOS: tests/run.js (Playwright, 28 verificacoes: aviso, cadastro, atividades, projetos, importar turma, copias, mesclar, relatorio da turma, aparelho compartilhado, faixa 4-5 sem Atelie, sem erros de JS). Uso: npm i -D playwright; npm test.
+- PAINEL DA ESCOLA (Area dos adultos, com PIN): (1) cadastrar turma colando lista ou arquivo .csv/.txt (nome; turma; ano; nascimento) com previa, deteccao de duplicados e validacao de datas; (2) copia de todos ou so de uma turma, data da ultima copia e aviso apos 14 dias; (3) importar copia com PREVIA e mesclagem segura: nada e apagado, alunos novos entram e, para quem ja existe, vence a versao com atividade mais recente (antes, o arquivo substituia o aluno); (4) aparelho compartilhado: volta sozinho para "Quem vai estudar?" ao abrir, ao tocar no nome e apos 3/5/10 min parado; (5) situacao do armazenamento e pedido de armazenamento persistente (navigator.storage.persist); (6) fim de ano: salvar copia da turma e remover a turma do aparelho, em duas etapas.
+- RELATORIO DA TURMA: quadro de rodadas por area e projetos concluidos, tambem no CSV.
+- AVISO DE NOVA VERSAO: quando o service worker troca de versao, a tela de alunos, a Area dos adultos e o Painel mostram "Atualizar agora".
+- manifest: id, categories e display_override. _headers: cache de images/.
+- GUIA_ESCOLAS.md: passo a passo para secretaria/TI (publicar, instalar, rede, configurar turma, aparelhos compartilhados, copias, LGPD, limites).
+- Arquivos novos: src/, build.js, tests/, package.json, images/, GUIA_ESCOLAS.md. Cache v38.
+
+v39 - CORRECAO DE IMAGENS E AVALIACAO INTERROMPIDA
+- IMAGENS: na v38 as imagens ficavam em images/ e, se a pasta nao fosse publicada, os cartoes dos mundos apareciam quebrados e a Capi virava o desenho simples (visto em celular). Agora o build EMBUTE images/ dentro do app.js (como na v37): so e preciso publicar index.html, styles.css, app.js, sw.js, manifest, icones e fonts/. images/ e apenas a fonte para o build e nao precisa ser publicada. O service worker deixou de listar images/ e passou a tolerar arquivo ausente na instalacao (antes, um arquivo faltando fazia o cache offline falhar inteiro).
+- AVALIACAO GUIADA INTERROMPIDA: ao reabrir o app (ou ao abrir "Avaliacao guiada") com uma avaliacao pela metade (ate 14 dias), aparece "Avaliacao em andamento" (area dos adultos, com PIN) com "Continuar de onde parou" ou "Comecar uma nova". Continuar retoma na proxima parte; a parte interrompida e refeita desde o inicio (os itens parciais dela sao descartados para nao contar em duplicado). Comecar uma nova mantem o que foi feito como avaliacao parcial no relatorio. Na tela inicial aparece o cartao "Avaliacao em andamento" para o adulto. "Parar por hoje" agora volta a Area dos adultos. Sessoes guardam o progresso em sess.at.
+- Testes: 37 verificacoes (inclui imagens carregando e retomada da avaliacao). Cache v39.
+
+v40 - VERSAO COMPLETA (PAGAMENTO UNICO) COM LIBERACAO PELO E-MAIL DA COMPRA
+- Gratis: mundos Letras, Leitura e Numeros. Completa: todos os mundos, avaliacao guiada, projetos e painel da escola. Mundos pagos mostram cadeado e abrem a tela "Versao completa" (comprar no Hotmart/Kiwify ou digitar o e-mail da compra).
+- Novo: worker/ (Worker da Cloudflare + KV que recebe os avisos do Hotmart e da Kiwify; veja worker/LEIAME.md). Reembolso/chargeback travam de novo; ate 5 aparelhos por e-mail.
+- Enquanto LIC_URL (src/02-estado.js, e app.js) estiver vazio o app fica 100% liberado.
+- Privacidade: PRIV_V=3 (o aviso inicial volta a aparecer; cita o e-mail da compra).
+- Arquivos para publicar: app.js, styles.css, sw.js (cache v40). Worker: worker/licenca.js. Testes: 37 do app + 19 do Worker (node worker/teste.mjs).
+
+v41 - PLANOS (FAMILIA 1, FAMILIA 2, PROFISSIONAL, ESCOLA) COM LIMITE DE ALUNOS E APARELHOS
+- Familia 1: 1 aluno, 2 aparelhos. Familia 2: 2 alunos, 3 aparelhos. Profissional: alunos ilimitados, 2 aparelhos. Escola: alunos ilimitados, 20 aparelhos. Gratis: 1 aluno (quem ja tem mais alunos continua com eles, so nao cadastra novos).
+- Aparelho extra: acao 'extra' no /admin do Worker (worker/LEIAME.md). Cada produto no Hotmart/Kiwify tem o proprio webhook com &plano=...
+- Arquivos para publicar: app.js, sw.js (cache v41). Worker: worker/licenca.js atualizado. Testes: 37 do app, 26 do Worker, 4 de limite de alunos.
