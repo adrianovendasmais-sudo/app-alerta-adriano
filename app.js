@@ -2622,7 +2622,7 @@ screens.report=(m,arg)=>{
   m.innerHTML=`<div class="noprint">${backBtn('parents')}<h2 class="mtitle" style="--c:var(--c-letras)">Relatório de ${esc(P.name)}</h2>
   <div class="panel"><label class="fl" for="repSel">Quais registros incluir</label><select id="repSel" class="inp">${opts}</select>
   <div class="row" style="--c:var(--c-letras)"><button class="btn primary" data-act="print">Imprimir</button><button class="btn" data-act="copy">Copiar texto</button><button class="btn" data-act="csv">Baixar planilha (CSV)</button></div>
-  <p class="hint">Imprimir e baixar funcionam quando o aplicativo está aberto no navegador, por exemplo no endereço publicado no Netlify. Dentro do Claude esses botões podem não responder; use “Copiar texto”.</p>
+  <p class="hint">Imprimir e baixar funcionam quando o aplicativo está aberto no navegador. Se algum botão não responder neste aparelho, use “Copiar texto”.</p>
   <textarea id="copyBox" class="inp" rows="8" readonly hidden aria-label="Texto do relatório"></textarea></div></div>${sheetHTML(R)}`;
   $('#repSel',m).onchange=e=>go('report',{sel:e.target.value},{replace:true});
   [['by','rp-by','pn-by'],['beh','rp-beh','pn-beh'],['obs','rp-obs','pn-obs']].forEach(a=>{
@@ -2666,7 +2666,7 @@ screens.parents=m=>{
   const ns=P.sessions.filter(s=>P.log.some(e=>e.sid===s.id)).length;
   m.innerHTML=`${backBtn('home')}<h2 class="mtitle" style="--c:var(--c-letras)">Área dos adultos</h2><p class="msub">Avaliação, relatório e ajustes de ${esc(P.name)}. Cada aluno tem as próprias configurações, salvas neste aparelho.</p>${updBarHTML()}
   <div class="panel"><h3>Avaliação e relatório</h3><p>Para avaliar outra criança, use “Trocar aluno” na tela inicial.</p>
-  <div class="row" style="--c:var(--c-letras)"><button class="btn primary" data-go="aval">Iniciar avaliação guiada</button><button class="btn" data-go="report">Ver e imprimir relatório</button><button class="btn" data-go="metas">Metas</button><button class="btn" data-go="turma">Relatório da turma</button><button class="btn" data-go="escola">Painel da escola</button></div>
+  <div class="row" style="--c:var(--c-letras)"><button class="btn primary" data-go="aval">Iniciar avaliação guiada${proLock()}</button><button class="btn" data-go="report">Ver e imprimir relatório</button><button class="btn" data-go="metas">Metas</button><button class="btn" data-go="turma">Relatório da turma${proLock()}</button><button class="btn" data-go="escola">Painel da escola${proLock()}</button></div>
   <p>${P.log.length} respostas registradas, ${ns} ${ns===1?'avaliação guiada':'avaliações guiadas'}.</p></div>
   ${licPanelHTML()}
   <div class="panel"><h3>Alunos</h3>
@@ -3256,6 +3256,11 @@ actions.idleSet=b=>{S.idleMin=+b.dataset.n;save();render();};
    Com LIC_URL vazio (02-estado.js) o app funciona 100% liberado, como antes. */
 const FREE_W=['letras','leitura','contas'];
 const PAID_V=['aval','avalrun','avresume','turma','escola','proj','projv','projfolio','projs'];
+/* só nos planos Profissional e Escola (família: apenas atividades, relatório do aluno, metas e projetos) */
+const PRO_V=['aval','avalrun','avresume','turma','escola'];
+const PRO_PLANOS=['pro','escola'];
+const proOk=()=>!licOn()||(licensed()&&(!S.lic||!S.lic.plano||PRO_PLANOS.indexOf(S.lic.plano)>=0));
+const proLock=()=>licOn()&&!proOk()?' 🔒':'';
 const licOn=()=>!!LIC_URL;
 const licensed=()=>!licOn()||!!(S.lic&&S.lic.ok);
 const FREE_PERFIS=1;
@@ -3273,6 +3278,7 @@ function paidView(v){
 function gateLic(){
   if(!licOn())return;
   if(view.name==='pform'&&!(view.arg&&view.arg.id)&&perfisBlocked()){view={name:'premium',arg:{why:'perfis',from:{name:'who'}}};return;}
+  if(licOn()&&licensed()&&!proOk()&&PRO_V.indexOf(view.name)>=0){view={name:'premium',arg:{why:'plano',from:{name:'parents'}}};return;}
   if(!licensed()&&paidView(view))view={name:'premium',arg:{from:{name:view.name,arg:view.arg}}};
 }
 const lockBadge=k=>worldLocked(k)?'<span class="lockb" aria-hidden="true">🔒</span><span class="sr"> (versão completa)</span>':'';
@@ -3290,6 +3296,14 @@ async function licCall(path,email){
 const maskMail=e=>{const p=String(e||'').split('@');return p.length<2?'':p[0].slice(0,2)+'***@'+p[1];};
 screens.premium=(m,arg)=>{
   const why=arg&&arg.why;
+  if(why==='plano'){
+    m.innerHTML=`${backBtn('parents')}<h2 class="mtitle" style="--c:var(--c-letras)">Plano Profissional ou Escola</h2>
+    <div class="panel"><h3>Este recurso não está no seu plano</h3>
+    <p>A <b>avaliação guiada</b>, o <b>relatório da turma</b> e o <b>painel da escola</b> fazem parte dos planos <b>Profissional</b> e <b>Escola</b>. O seu plano${S.lic&&PLANO_NOME[S.lic.plano]?' ('+esc(PLANO_NOME[S.lic.plano])+')':''} inclui todos os mundos de atividades, o relatório do aluno, as metas e os projetos.</p>
+    <p>Para usar a avaliação guiada, adquira o plano Profissional ou o plano Escola${PRIV_CONTACT?' ou fale com o suporte: '+esc(PRIV_CONTACT):''}.</p>
+    <div class="row">${BUY_HOTMART?`<a class="btn primary" href="${esc(BUY_HOTMART)}" target="_blank" rel="noopener">Ver planos no Hotmart</a>`:''}${BUY_KIWIFY?`<a class="btn primary" href="${esc(BUY_KIWIFY)}" target="_blank" rel="noopener">Ver planos na Kiwify</a>`:''}</div></div>`;
+    return;
+  }
   if(licensed()&&!why)return go('home',undefined,{replace:true});
   if(why==='perfis'){
     const n=perfisMax();
@@ -3303,8 +3317,8 @@ screens.premium=(m,arg)=>{
   m.innerHTML=`${backBtn('home')}<h2 class="mtitle" style="--c:var(--c-letras)">Versão completa</h2>
   <div class="panel"><h3>Para continuar, peça a um adulto</h3>
   <p>A versão gratuita tem os mundos das Letras, da Leitura e dos Números. A versão completa libera:</p>
-  <p>• todos os mundos (Relógios, Dinheiro, Cores e formas, Mente, Quebra-cabeças e Inglês com histórias)<br>• avaliação guiada e relatório para o profissional<br>• projetos e painel da escola</p>
-  <p><b>Pagamento único</b>, sem mensalidade. Há planos para 1 criança (2 aparelhos), até 2 crianças (3 aparelhos), profissional (alunos ilimitados, 2 aparelhos) e escola (alunos ilimitados, 20 aparelhos).</p>
+  <p>• <b>todos os mundos</b> (Relógios, Dinheiro, Cores e formas, Mente, Quebra-cabeças e Inglês com histórias)<br>• relatório do aluno, metas e projetos<br>• nos planos <b>Profissional</b> e <b>Escola</b>: avaliação guiada, relatório da turma e painel da escola</p>
+  <p><b>Pagamento único</b>, sem mensalidade. Há planos para 1 criança (2 aparelhos), até 2 crianças (3 aparelhos), Profissional (alunos ilimitados, 2 aparelhos) e Escola (alunos ilimitados, 20 aparelhos).</p>
   ${buy?`<div class="row">${buy}</div>`:''}</div>
   <div class="panel"><h3>Já comprei</h3>
   <p>Digite o <b>mesmo e-mail usado na compra</b> para liberar neste aparelho.</p>
